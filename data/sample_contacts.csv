@@ -1,0 +1,4 @@
+facility_name,facility_type,country,city,contact_name,role,work_email,work_phone,specialty,linkedin_url,last_verified_ts
+St. Mary's Hospital,Hospital,UK,Brighton,Jane  DOE ,Hr director,Jane.Doe@stmarys.org, (01273) 555-0199 ,Cardiologist,,2024-01-15
+St Marys Hospital,Hospital,UK,Brighton,Jane Doe,HR Director,jane.doe@stmarys.org,+44 1273 555199,Cardiology,,2023-05-01
+Coastal Clinic,Clinic,UK,Hove,Mark Smith,Talent Manager,,01273 910 000,Orthopedics,,

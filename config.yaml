@@ -1,0 +1,29 @@
+required_fields:
+  - facility_name
+  - contact_name
+  - work_email
+  - role
+  - specialty
+
+dedupe:
+  fuzzy_threshold: 90
+
+freshness_days: 180
+
+enrichment:
+  providers:
+    - type: reference_table
+      path: data/reference_enrichment.csv
+    - type: apollo
+      enabled: false
+      base_url: https://api.apollo.io/v1
+      batch_size: 50
+    - type: cognism
+      enabled: false
+      base_url: https://api.cognism.com
+      batch_size: 50
+
+validation:
+  min_email_valid_pct: 0.98
+  max_duplicate_rate: 0.01
+  min_completeness_pct: 0.95

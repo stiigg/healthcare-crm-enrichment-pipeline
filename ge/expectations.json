@@ -1,0 +1,23 @@
+{
+  "expectations": [
+    {
+      "type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "facility_name"
+      }
+    },
+    {
+      "type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "contact_name"
+      }
+    },
+    {
+      "type": "expect_column_values_to_match_regex",
+      "kwargs": {
+        "column": "work_email",
+        "regex": "^$|^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$"
+      }
+    }
+  ]
+}
